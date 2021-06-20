@@ -1,0 +1,35 @@
+READERS TABLE DML
+
+INSERT INTO READERS (reader_ID, reader_name,reader_address) VALUES (1, 'Anna', '847 Tanglewood Dr, Calhoun')
+INSERT INTO READERS (reader_ID, reader_name,reader_address) VALUES (2, 'Terry', '45 Strawberry Court, Billerica')
+INSERT INTO READERS (reader_ID, reader_name,reader_address) VALUES (3, 'Angel', '89 Shirley Street, Columbus')
+INSERT INTO READERS (reader_ID, reader_name,reader_address) VALUES (4, 'Clarkson', '9 Shore Street, Wyandot')
+INSERT INTO READERS (reader_ID, reader_name,reader_address) VALUES (5, 'Troy', '7345 Morris Ave, Centerville')
+INSERT INTO READERS (reader_ID, reader_name,reader_address) VALUES (6, 'Kyla', '967 Summer Street, South Lyon  ')
+
+
+BOOKS TABLE DML
+
+INSERT INTO Books (ID, book_Id_code, book_title,author,book_loan_status) VALUES (1, 'AAA123', 'The Night Frank', 'Jerry Thomas' ,'AVAILABLE')
+INSERT INTO Books (ID, book_Id_code, book_title,author,book_loan_status) VALUES (2, 'AAA124', 'The Night Frank', 'Jerry Thomas' ,'AVAILABLE')
+INSERT INTO Books (ID, book_Id_code, book_title,author,book_loan_status) VALUES (3, 'BBB123', 'Give me a peace of Love', 'Patience Kenlen' ,'AVAILABLE')
+INSERT INTO Books (ID, book_Id_code, book_title,author,book_loan_status) VALUES (4, 'CCC123', 'Intoduction to Programming', 'Jacob Wartz' ,'AVAILABLE')
+INSERT INTO Books (ID, book_Id_code, book_title,author,book_loan_status) VALUES (5, 'DDD123', 'In the woods', 'Michael Anderson' ,'AVAILABLE')
+INSERT INTO Books (ID, book_Id_code, book_title,author,book_loan_status) VALUES (6, 'DDD124', 'In the woods', 'Michael Anderson' ,'AVAILABLE')
+INSERT INTO Books (ID, book_Id_code, book_title,author,book_loan_status) VALUES (7, 'EEE123', 'Snow White', 'Marry Kelpat' ,'AVAILABLE')
+
+
+LOANS TABLE DML(PHP)
+
+INSERT INTO Loans (book_id_code, reader_Id, acquisition_date) Values ($bookIdCode,  $Id, $curr_timestamp)
+
+UPDATE BOOK STATUS TO ON LOAN(PHP)
+UPDATE Books SET book_loan_status = 'ON LOAN'WHERE book_Id_code = $bookIdCode
+
+
+UPDATE BOOK STATUS WHEN RETURNED TO AVAILABLE(PHP)
+UPDATE Books SET book_loan_status = 'AVAILABLE'WHERE book_Id_code = $bookIdCode
+
+
+
+

@@ -1,0 +1,49 @@
+.heading_level_1 {
+    background-color: #000;
+    height: 100px;    
+    
+  }
+
+  .heading_level_2 {
+    background-color: #EEEEEE;
+    height: 730px
+  }
+
+  .heading_level_3 {
+    background-color: #000;
+    height: 100px;
+  }
+
+  #search_area {
+    margin-bottom: 100px;
+    margin-left: 60px;
+
+  }
+
+  #showData{
+      margin-left: 70px;
+  }
+  #readerDetails{
+      margin-left: 50px;
+  }
+  h1{
+      color: white !important;
+  }
+  .square{
+      height:55px;
+      width: 70px;
+      background-color: white;
+      position:absolute;
+      margin-top: 20px;
+      margin-left: 80px;
+      
+        }
+ .centerHeading{
+    justify-content: center;
+    text-align: center;  
+ }
+ #bookReservationRequest{
+  margin-left: 70px;
+
+ }
+  

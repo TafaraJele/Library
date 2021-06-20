@@ -1,0 +1,24 @@
+ <!--<table class="table table-striped">
+          <tr>
+            <th>Book ID Code</th>
+            <th>Book Title</th>
+            <th>Book Loan Status</th>
+            <th>Book Author</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>book_Id_code</td>
+            <td>book_title</td>
+            <td>Available</td>
+            <td>author</td>
+            <td><button type="button" class="btn btn-primary btn-sm" onClick="captureReader()">Reserve Book</button>
+          </tr>
+          <tr>
+            <td>book_Id_code</td>
+            <td>book_title</td>
+            <td>On Loan</td>
+            <td>author</td>
+            <td><button type="button" class="btn btn-primary btn-sm " disabled onClick="captureReader()">Reserve
+                Book</button>
+          </tr>
+        </table>-->

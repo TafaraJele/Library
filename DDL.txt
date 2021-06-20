@@ -1,0 +1,26 @@
+CREATE DATABASE Library
+
+CREATE TABLE Readers (
+  reader_ID int,
+  reader_name nvarchar(50),
+  reader_address nvarchar(50),
+  PRIMARY KEY (reader_ID)
+);
+
+CREATE TABLE Loans (
+  loan_ID int,
+  book_id_code nvarchar(50),
+  reader_Id int,
+  acquisition_date datetime,
+  redeliveray_date datetime,
+  PRIMARY KEY (loan_ID)
+);
+
+CREATE TABLE Books (
+ID int,
+  book_Id_code nvarchar(50),
+  book_title nvarchar(50),
+  author nvarchar(50),
+  book_loan_status nvarchar(50),
+  PRIMARY KEY (ID )
+);
